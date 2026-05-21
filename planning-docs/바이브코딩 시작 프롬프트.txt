@@ -1,0 +1,21 @@
+나는 코딩 6개월차 초보 개발자야.
+BugQuest라는 포트폴리오용 React 웹앱을 만들고 싶어.
+
+목표:
+초보 개발자의 반복 실수를 기록하고, AI 설명과 개발 퀘스트로 성장 루프를 만드는 앱.
+
+기술 스택:
+React, Vite, Tailwind CSS, React Router, Zustand, Recharts, LocalStorage
+
+우선 백엔드 없이 LocalStorage 기반 MVP로 만들고 싶어.
+
+아래 문서를 기준으로 작업해줘:
+- README.md
+- docs/01_PROJECT_OVERVIEW.md
+- docs/02_FEATURES.md
+- docs/03_PAGE_STRUCTURE.md
+- docs/04_DATA_MODEL.md
+- docs/05_UI_GUIDE.md
+- docs/07_TASK_PLAN.md
+
+먼저 프로젝트 폴더 구조를 만들고, 라우팅과 기본 레이아웃부터 구현해줘.

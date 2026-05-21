@@ -52,6 +52,7 @@ const Sidebar = ({ isOpen, onClose }) => {
               <NavLink
                 key={item.path}
                 to={item.path}
+                end={item.path === '/logs' || item.path === '/'}
                 onClick={onClose}
                 className={({ isActive }) =>
                   `flex items-center gap-3 rounded-xl px-3 py-2 text-sm transition ${

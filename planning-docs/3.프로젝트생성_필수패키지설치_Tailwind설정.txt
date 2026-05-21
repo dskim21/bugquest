@@ -1,0 +1,46 @@
+1. 프로젝트 폴더에서 터미널 열기
+cd D:\projects\bugquest
+
+2. 필수 패키지 설치
+npm install react-router zustand recharts lucide-react clsx
+
+3. Tailwind 설치
+npm install tailwindcss @tailwindcss/vite
+
+4. vite.config.js 수정
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+})
+
+5. src/index.css 수정
+ - 기존 내용 지우고 아래만 넣기
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+6. 실행 확인
+npm run dev
+
+7. Tailwind 테스트
+ - src/App.jsx 내용 수정 후 테스트 -> 보라색 BugQuest가 가운데 뜨면 성공
+function App() {
+  return (
+    <main className="min-h-screen bg-slate-950 text-white flex items-center justify-center">
+      <h1 className="text-4xl font-bold text-violet-400">
+        BugQuest
+      </h1>
+    </main>
+  )
+}
+
+export default App

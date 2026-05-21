@@ -1,0 +1,52 @@
+# 필수설치
+node -v
+npm -v
+git --version
+
+# VSCode 확장
+ESLint
+Prettier
+Tailwind CSS IntelliSense
+ES7+ React/Redux/React-Native snippets
+Auto Rename Tag
+GitLens
+
+# 프로젝트 생성 명령어
+npm create vite@latest bugquest
+cd bugquest
+npm install
+npm install tailwindcss @tailwindcss/vite
+npm install react-router zustand recharts lucide-react clsx
+npm run dev
+
+# 프로젝트 아키텍쳐
+src/
+  assets/
+  components/
+    common/
+    layout/
+    logs/
+    quests/
+    dashboard/
+  pages/
+    Dashboard.jsx
+    ErrorLogs.jsx
+    ErrorLogDetail.jsx
+    NewErrorLog.jsx
+    Quests.jsx
+    Stats.jsx
+    Settings.jsx
+  store/
+    useLogStore.js
+    useQuestStore.js
+    useStatsStore.js
+  utils/
+    storage.js
+    questGenerator.js
+    date.js
+  data/
+    mockLogs.js
+    questTemplates.js
+  App.jsx
+  main.jsx
+  index.css
